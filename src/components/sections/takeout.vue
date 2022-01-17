@@ -5,10 +5,10 @@
                 <!-- <img src="../../assets/img/slider32x.jpg" alt="chef-1"> -->
             </div>
             <div class="descr">
-                <h4>fine dinning experience</h4>
-                <h1>The best table in town</h1>
+                <h4>enjoy your meal at home</h4>
+                <h1>Takeout now available</h1>
                 <p>Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.</p>
-                <a class="button1" href="#">explore the menu</a>
+                <a class="button1" href="#"><i class="fas fa-car"></i> view takeout menu</a>
             </div>       
         </div>
     </section>
@@ -17,7 +17,7 @@
 <script>
 
 export default {
-    name: 'hero2',
+    name: 'takeout',
     components: {
   }
 }
@@ -27,6 +27,9 @@ export default {
 @import '../../assets/style/partials/variables.scss';
 
     .hero{
+        .navb{
+            align-self: flex-start;
+        }
         .descr{
             background-color: black;
             color: $wGray;
@@ -53,7 +56,7 @@ export default {
             
         }
         .side-img{
-            background-image: url('../../assets/img/slider32x.jpg');
+            background-image: url('../../assets/img/slider72x-scaled.jpg');
             background-size: cover;
             width: 60%;
             // img{

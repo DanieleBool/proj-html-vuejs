@@ -27,7 +27,7 @@
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                 </div>
                 <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eligendi laboriosam assumenda dolores ad magnam hic dolorem reprehenderit dignissimos? Accusantium quia quos aspernatur provident distinctio. Officiis repellat animi necessitatibus sequi!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eligendi laboriosam assumenda dolores ad magnam hic dolorem reprehenderit dignissimos.</p>
                 <a class="button1" href="#">read full article</a>
             </div>
             <div class="descr globe">
@@ -37,7 +37,7 @@
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                 </div>
                 <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eligendi laboriosam assumenda dolores ad magnam hic dolorem reprehenderit dignissimos? Accusantium quia quos aspernatur provident distinctio. Officiis repellat animi necessitatibus sequi!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eligendi laboriosam assumenda dolores ad magnam hic dolorem reprehenderit dignissimos.</p>
                 <a class="button1" href="#">read full article</a>
             </div>
         </div>
@@ -63,17 +63,16 @@ export default {
     .container{
         display: flex;
         justify-content: center;
-        color: black;
         margin-top: 100px;
         height: 630px;
         // object-fit: contain;
         width: 80%;
+        justify-content: space-between;
         .descr{
-            background-color: black;
             color: $wGray;
-            width: 40%;
+            width: 100%;
             padding: 8% 7%;
-
+            background-color: black;
             h4{
                 text-transform: uppercase;
                 font-size: 11px;
@@ -105,28 +104,32 @@ export default {
             }
         }
         .side-img{
+            width: 99%;
             img{
                 height: 100%;
-                // height: 100%;
                 object-fit: contain;
             }
         }
         .guardian{
-            background-image: url('../../assets/img/info52x.jpg');
+            background-image: linear-gradient(#000 15%, transparent, transparent),url('../../assets/img/info52x.jpg');
             background-size: cover;
-            width: 40%;
+            width: 45%;
         }
         .globe{
-            width: 40%;
-            background-image: url('../../assets/img/info12x.jpg');
+            width: 45%;
+            background-image: linear-gradient(#000 15%, transparent, transparent),url('../../assets/img/info12x.jpg');
             background-size: cover;
-
         }
         .guardian, .globe{
-            
+            filter: brightness(90%);
         }
-        .space{
-           justify-content: space-between; 
+        .cont-space{
+        display: flex;
+        color: white;
+        margin-top: 100px;
+        height: 630px;
+        width: 80%;
+        justify-content: space-between;
         }
     }
 
